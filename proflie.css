@@ -1,0 +1,51 @@
+h5 {
+    line-height: 21.0px;
+    font: 14.0px Times;
+    color: #F4615E;
+}
+
+h4 {
+    line-height: 30.0px;
+    font: 20.0px Times;
+    color: #F4615E;
+    font-family: Calibri;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 20px;
+    color: #A8ACA7;
+    text-decoration: underline;
+}
+
+.pline {
+    font-style: normal;
+    font-family: ;
+    color: black;
+    font-weight: 150%;
+}
+
+div p {
+    font-style: italic;
+    font-size: 18px;
+    color: #A8A2A2;
+}
+
+div~p {
+    font-family: times;
+    font-size: 17px;
+    color: #FA7AAB;
+}
+
+.p2line {
+    font-style: normal;
+    font-family: Tahoma;
+    color: #7D7D7D;
+    font-size: 80%;
+}
+
+.p3line {
+    font-family: Arial;
+    font-size: 70%;
+    color: #4571FC;
+}
