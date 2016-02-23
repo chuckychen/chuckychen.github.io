@@ -24,9 +24,19 @@ body {
 }
 
 .text-vertical-left {
+    padding: 10ex;
+    margin: 0;
     display: table-cell;
     text-align: left;
     vertical-align: left;
+    position: relative;
+    width: 100%;
+    background-color:#A5D1FB
+;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .text-vertical-center h1 {
@@ -34,7 +44,8 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-    color: black;
+    text-align: middle;
+    vertical-align: middle;
 }
 
 
@@ -50,13 +61,13 @@ body {
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255, 255, 255);
+    background-color: #89A8F7;
 }
 
 .btn-light:hover,
@@ -164,11 +175,10 @@ hr.small {
 
 .header {
     display: table;
-    position: relative;
     width: 100%;
-    height: 400%;
-    color: #FFFFFF;
-    /*background: url(../img/love.jpg) no-repeat center center scroll;*/
+    height: 500px;
+    color: #fff;
+    background: url(../img/work.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -176,32 +186,37 @@ hr.small {
 }
 
 
-/* About */
+/* background */
 
-.about {
-    padding: 50px 0;
+.background {
+    display: table;
+    width: 100%;
+    height: 100px;
 }
-
-
-/* Services */
 
 .services {
     padding: 50px 0;
 }
 
 .service-item {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    display: inline-block;
+    position: relative;
+    width: 2cloem;
+    hight: 10em;
+    line-height: 2em;
+    vertical-align: middle;
+    font-size: 1em;
 }
 
 
-/* Callout */
+/* work */
 
-.callout {
+.works {
     display: table;
+    position: relative;
     width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/love.jpg) no-repeat center center scroll;
+    font-color: #B1C6F9;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -256,4 +271,27 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+.ncku {
+    background: url(../img/ncku.jpg) no-repeat;
+}
+
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 100%;
+    vertical-align: -15%;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.fa-stack-2x {
+    font-size: 2em;
 }
