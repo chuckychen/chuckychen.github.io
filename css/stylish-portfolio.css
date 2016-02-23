@@ -161,8 +161,8 @@ hr.small {
     position: relative;
     width: 100%;
     height: 400%;
-    color: #fff;
-    background: url(../img/love.jpg) no-repeat center center scroll;
+    color: #FFFFFF;
+    /*background: url(../img/love.jpg) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
