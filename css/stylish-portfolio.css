@@ -19,8 +19,14 @@ body {
 
 .text-vertical-center {
     display: table-cell;
-    text-align: center;
+    text-align: middle;
     vertical-align: middle;
+}
+
+.text-vertical-left {
+    display: table-cell;
+    text-align: left;
+    vertical-align: left;
 }
 
 .text-vertical-center h1 {
