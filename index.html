@@ -22,6 +22,45 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="../highslide/highslide-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="../highslide/highslide.css" />
+    <!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide-ie6.css" />
+<![endif]-->
+    <!--
+    2) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+    <script type="text/javascript">
+    hs.graphicsDir = '../highslide/graphics/';
+    hs.align = 'center';
+    hs.transitions = ['expand', 'crossfade'];
+    hs.fadeInOut = true;
+    hs.dimmingOpacity = 0.8;
+    hs.outlineType = 'rounded-white';
+    hs.captionEval = 'this.thumb.alt';
+    hs.marginBottom = 105; // make room for the thumbstrip and the controls
+    hs.numberPosition = 'caption';
+
+    // Add the slideshow providing the controlbar and the thumbstrip
+    hs.addSlideshow({
+        //slideshowGroup: 'group1',
+        interval: 5000,
+        repeat: false,
+        useControls: true,
+        overlayOptions: {
+            className: 'text-controls',
+            position: 'bottom center',
+            relativeTo: 'viewport',
+            offsetY: -60
+        },
+        thumbstrip: {
+            position: 'bottom center',
+            mode: 'horizontal',
+            relativeTo: 'viewport'
+        }
+    });
+    </script>
 </head>
 
 <body>
@@ -48,11 +87,11 @@
         </ul>
     </nav>
     <!-- Header -->
-    <div class="col-lg-12 vid">
+    <div>
         <div>
             <header id="top" class="header">
-                <div class="text-vertical-center tt;row text-center">
-                    <h1>Chuck Chen</h1>
+                <div class="text-vertical-center tt row text-center">
+                    <h1><strong>Chuck Chen</strong></h1>
                     <br>
                     <a href="#work" class="btn btn-dark btn-lg">Find Out More</a>
                 </div>
@@ -64,14 +103,14 @@
     <section id="background" class="background">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1 ">
-                    <h2>Personal Background</h2>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h1><strong>Personal Background</strong></h1>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span> <img src="img/ncku.jpg" width="50%" height="auto">
-                            </span>
+                                <div> <img src="img/ncku.jpg" width="40%" height="40%">
+                                </div>
                                 <h4>
                                     <strong>NCKU graduated</strong>
                                 </h4>
@@ -83,9 +122,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span>
-                                <img src="img/HR.jpg" width="50%" height="50%">
-                            </span>
+                                <div>
+                                    <img src="img/HR.jpg" width="40%" height="40%">
+                                </div>
                                 <h4>
                                     <strong>Human Resources</strong>
                                 </h4>
@@ -96,9 +135,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span>
-                                <img src="img/airbnb.jpg" width="50%" height="50%">
-                            </span>
+                                <div>
+                                    <img src="img/airbnb.jpg" width="40%" height="40%">
+                                </div>
                                 <h4>
                                     <strong>Airbnb Host</strong>
                                 </h4>
@@ -109,15 +148,14 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span>
-                                <img src="img/airbnb.jpg" width="50%" height="50%">
-                            </span>
+                                <div>
+                                    <img src="img/tainan.jpg" width="44%" height="44%">
+                                </div>
                                 <h4>
-                                    <strong>Airbnb Host</strong>
+                                    <strong>Tainan My Hometown</strong>
                                 </h4>
-                                <p>embody my fervency to the world
-                                    <br>meet 100↑ people since July,2015</p>
-                                <a href="https://www.airbnb.com.tw/rooms/6738232" target="_blank" class="btn btn-light">Learn More</a>
+                                <p>If you yearn for a laid-back way of living then must visit</p>
+                                <a href="http://wikitravel.org/en/Tainan" target="_blank" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -130,42 +168,44 @@
         <!-- /.container -->
     </section>
     <!-- Callout -->
-    <section id="work" class="works">
-        <div class="text-vertical-left">
-            <h1>Working Experience</h1>
-            <br>
-            <div>
-                <h3>Garena<br>
-            Recruiter, Human Resources</h3>
-                <p>
-                    <ul>
-                        <li>Act as focal in advising line managers on recruiting requests and drive strategies for candidate attraction.</li>
-                        <li>Accelerate the cross-country recruitment operation by streamlining project, partnering with global recruitment team in Singapore and Taiwan. (Management Associate Program).</li>
-                        <li>pproach talented candidates through group researches, vendor management, interest resources and referrals. Screen candidates to build talented network for further hiring reference.</li>
-                        <li>Design and record hiring database to integrate resources, enlarge recruiting efficiency. </li>
-                    </ul>
-                    <ul>Achievement
-                        <li>Filled more than 80 permanent vacancies within 6 months; which includes 50% technical position and 30% senior level.</li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h3>DHL Express<br>
-            HR services analyst, Human Resources </h3>
-                <p>This position is a hands-on role that provides timely, accurate and professional service to support all Human resources department and internal business partners with emphasis on talent development and training.
-                    <ul>
-                        <li>Ensure training record integrity in HRIS (PeopleSoft) systems and early engages in training planning with multiple clients to set development strategy.</li>
-                        <li>Directly support country HRD manager to reach company’s global talent management and to understand training needs and manages training process.</li>
-                        <li>Design and execute the long-term internship program with excellent feedback from clients within all BUs.</li>
-                        <li>Generate reports monthly or other reports related to training and submit HRIS records to global talent management as well.</li>
-                        <li>Maintain standardization of country training material by conducting print process with our supplier to reach global printing standard. </li>
-                    </ul>
-                    <ul>Achievement
-                        <li>Well created the warehousing management system in two storages and also reorganized HR office working environment. </li>
-                        <li>Succeeded to implement and receive more than NTD 70,000 training allowance from governmental human resource development project in 2014. </li>
-                        <li>Efficiently filled more than 12 intern positions in 6 months for all departments. </li>
-                    </ul>
-                </p>
+    <section id="work">
+        <div class="container">
+            <div class="yell">
+                <h1 class="row text-center"><strong>Working Experience</strong></h1>
+                <br>
+                <div>
+                    <h3><strong>Garena<br>
+            Recruiter, Human Resources</strong></h3>
+                    <p>
+                        <ul>
+                            <li>Act as focal in advising line managers on recruiting requests and drive strategies for candidate attraction.</li>
+                            <li>Accelerate the cross-country recruitment operation by streamlining project, partnering with global recruitment team in Singapore and Taiwan. (Management Associate Program).</li>
+                            <li>pproach talented candidates through group researches, vendor management, interest resources and referrals. Screen candidates to build talented network for further hiring reference.</li>
+                            <li>Design and record hiring database to integrate resources, enlarge recruiting efficiency. </li>
+                        </ul>
+                        <ul><strong>Achievement</strong>
+                            <li>Filled more than 80 permanent vacancies within 6 months; which includes 50% technical position and 30% senior level.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h3><strong>DHL Express<br>
+            HR services analyst, Human Resources </strong></h3>
+                    <p>This position is a hands-on role that provides timely, accurate and professional service to support all Human resources department and internal business partners with emphasis on talent development and training.
+                        <ul>
+                            <li>Ensure training record integrity in HRIS (PeopleSoft) systems and early engages in training planning with multiple clients to set development strategy.</li>
+                            <li>Directly support country HRD manager to reach company’s global talent management and to understand training needs and manages training process.</li>
+                            <li>Design and execute the long-term internship program with excellent feedback from clients within all BUs.</li>
+                            <li>Generate reports monthly or other reports related to training and submit HRIS records to global talent management as well.</li>
+                            <li>Maintain standardization of country training material by conducting print process with our supplier to reach global printing standard. </li>
+                        </ul>
+                        <ul><strong>Achievement</strong>
+                            <li>Well created the warehousing management system in two storages and also reorganized HR office working environment. </li>
+                            <li>Succeeded to implement and receive more than NTD 70,000 training allowance from governmental human resource development project in 2014. </li>
+                            <li>Efficiently filled more than 12 intern positions in 6 months for all departments. </li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -174,41 +214,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Interests
-</h2>
+                    <h1><strong>Interests</strong></h1>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                            <div class=" portfolio-item">
+                                <h3>
+                                    <Strong>English Self-Study Group</Strong>
+                                    </h3>
+                                <h5><strong>Founded since Dec.,2014</Strong></h5>
+                                <p>There's no dobut English is one of the most worldwide used languages, myriad information and knowledge has been stored in English. In order to catch up with the world trends.
+                                    <br>I decided to found a self-study group and look for kindred spirits to join.</p>
+                                <a>
+                                    <img class="img2-portfolio img-responsive" src="img/tlc.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class=" portfolio5-item">
+                                <h3><Strong>burger Collection</Strong></h3>
+                                <h5><strong>Visited USA,South Korea,Japan,Singapore,Thailand,Hong Kong..</Strong></h5>
+                                <p>I like burger since I was a child. Finding a good tasty burger and ranking it on my favorite list is where my fun source comes from.
+                                    <br>This interest is an endless journey, I'll follow my curiosity, continually explore the world with my interest in burger :)
+                                </p>
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <img class="img-portfolio img-responsive " src="img/burggg.jpg">
                                 </a>
                             </div>
                         </div>
                     </div>
+                    </hr>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More </a>
+                    <a href="https://drive.google.com/file/d/0B33qe5QvOYMIRlM0LUttc2JJUEU/view?usp=sharing" target="_blank" class="btn btn-dark">Download Resume </a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -223,23 +260,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Contact info</strong>
+                    <h4 class="redting"><strong>Contact info</strong>
                     </h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> +886 975-125-030</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:chuckychen88@gmail.com">chuckychen88@gmail.com</a>
+                        <li class="redting"><i class="fa fa-phone fa-fw"></i> +886 975-125-030</li>
+                        <li class="redting"><i class="fa fa-envelope-o fa-fw redting"></i> chuckychen88@gmail.com
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/archiblaid"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                            <a href="https://www.instagram.com/chuckie_tb"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            <a href="https://tw.linkedin.com/in/chuck-chen-9587337a"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
