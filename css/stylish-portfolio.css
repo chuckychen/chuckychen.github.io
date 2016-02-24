@@ -61,7 +61,7 @@ body {
 }
 
 .text-vertical-center h1 {
-    margin: 0;
+    margin-left: 1em;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
@@ -69,7 +69,13 @@ body {
     vertical-align: middle;
 }
 
-
+.text-vertical-center a{
+    margin-left:4em;
+    font-size: 1.5em;
+    text-align: middle;
+    vertical-align: middle;
+    padding:0;
+}
 /* Custom Button Styles */
 
 .btn-dark {
