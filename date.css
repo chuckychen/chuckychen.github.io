@@ -1,0 +1,33 @@
+.vid {
+    position: relative;
+    opacity: 1.0;
+    height: 110%;
+}
+
+.vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+.tt {
+    padding-top: 25%;
+}
+
+.tt h1 {
+    color: #fff;
+}
+
+.ser {
+    background-color: #b44131;
+}
+
+.call h1 {
+    color: #000;
+}
+
+.gogo{
+    background-color: #BCCBFA;
+}
